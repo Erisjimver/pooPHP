@@ -4,7 +4,7 @@
 //-----------COCHE----------------------------------//
 	class Coche{
 
-		var $rueda;
+		private $rueda;
 		var $color;
 		var $motor;
 
