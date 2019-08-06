@@ -25,6 +25,8 @@
 
 	echo "El Pegaso tiene " . $pegaso-> ruedas . " ruedas <br>";
 
+	$pegaso -> arrancar();
+
 
 
 

@@ -49,7 +49,7 @@
 //-----------CAMION----------------------------------//
 
 
-	class Camion{
+	class Camion extends Coche{
 
 		var $rueda;
 		var $color;
@@ -63,25 +63,6 @@
 
 		}
 
-
-		function arrancar(){
-
-			echo "Estoy arrancando" . "</br>";
-
-		}
-
-
-		function girar(){
-
-			echo "Estoy girando" . "</br>";
-
-		}
-
-		function frenar(){
-
-			echo "Estoy frenando" . "</br>";
-
-		}
 
 
 	}
