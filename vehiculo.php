@@ -16,6 +16,10 @@
 
 		}
 
+		function get_ruedas(){
+			return $this->ruedas;
+		}
+
 		function arrancar(){
 
 			echo "Estoy arrancando" . "</br>";

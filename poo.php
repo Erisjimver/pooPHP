@@ -14,12 +14,6 @@
 
 	$pegaso = new Camion();
 
-	//$mazda -> arrancar();
-	//$mazda -> girar();
-	//$mazda -> frenar();
-	//echo $mazda -> ruedas;
-	//$renault -> establece_color("rojo","Renault");
-	//$seat -> establece_color("azul","seat");
 
 	echo "El Mazda tiene " . $mazda-> ruedas . " ruedas <br>";
 
@@ -28,11 +22,8 @@
 	$pegaso -> arrancar();
 
 	$pegaso -> establece_color("Rojo", "Pegaso");
-	
 
-
-
-
+	echo "El Mazda tiene: " . $mazda->get_ruedas() . " ruedas <br>";
 ?>
 
 
