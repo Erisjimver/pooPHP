@@ -8,55 +8,28 @@
 
 <?php
 
+	include("vehiculo.php");
 
-	class Coche{
+	$mazda = new Coche(); //estado inicial al objeto o instancia
 
-		var $rueda;
-		var $color;
-		var $motor;
+	$pegaso = new Camion();
 
-		function __construct(){//metodo constuctor
+	//$mazda -> arrancar();
+	//$mazda -> girar();
+	//$mazda -> frenar();
+	//echo $mazda -> ruedas;
+	//$renault -> establece_color("rojo","Renault");
+	//$seat -> establece_color("azul","seat");
 
-			$this -> ruedas=4;
-			$this -> color="";
-			$this -> motor=1600;
+	echo "El Mazda tiene " . $mazda-> ruedas . " ruedas <br>";
 
-		}
+	echo "El Pegaso tiene " . $pegaso-> ruedas . " ruedas <br>";
 
-		function arrancar(){
-
-			echo "Estoy arrancando" . "</br>";
-
-		}
-
-
-		function girar(){
-
-			echo "Estoy girando" . "</br>";
-
-		}
-
-		function frenar(){
-
-			echo "Estoy frenando" . "</br>";
-
-		}
-
-
-	}
-
-	$renault = new Coche(); //estado inicial al objeto o instancia
-	$mazda = new Coche();
-	$seat = new Coche();
-
-	$mazda -> arrancar();
-	$mazda -> girar();
-	$mazda -> frenar();
-	echo $mazda -> ruedas;
 
 
 
 ?>
+
 
 </body>
 </html>
