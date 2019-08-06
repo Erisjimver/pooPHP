@@ -27,6 +27,9 @@
 
 	$pegaso -> arrancar();
 
+	$pegaso -> establece_color("Rojo", "Pegaso");
+	
+
 
 
 

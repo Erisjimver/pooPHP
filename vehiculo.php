@@ -34,6 +34,7 @@
 			echo "Estoy frenando" . "</br>";
 
 		}
+
 		function establece_color($color_coche, $nombre_coche){
 
 			$this -> color = $color_coche;
@@ -63,6 +64,23 @@
 
 		}
 
+
+
+		function establece_color($color_camion, $nombre_camion){
+
+			$this -> color = $color_camion;
+
+			echo "El color de $nombre_camion es: " . $this -> color . "</br>";
+			
+		}
+
+		function arrancar(){
+
+			parent::arrancar();
+
+			echo "Camion arrancado <br>";
+
+		}
 
 
 	}
