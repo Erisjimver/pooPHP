@@ -19,11 +19,15 @@
 
 	echo "El Pegaso tiene " . $pegaso-> ruedas . " ruedas <br>";
 
-	$pegaso -> arrancar();
+	//$pegaso -> arrancar();
 
-	$pegaso -> establece_color("Rojo", "Pegaso");
+	//$pegaso -> set_color("Rojo", "Pegaso");
 
 	echo "El Mazda tiene: " . $mazda->get_ruedas() . " ruedas <br>";
+
+	echo "El Pegaso tiene: " . $pegaso->get_ruedas() . " ruedas <br>";
+
+	echo "El Mazda tiene: " . $mazda->get_motor() . " c/c <br>";
 ?>
 
 

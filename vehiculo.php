@@ -4,9 +4,10 @@
 //-----------COCHE----------------------------------//
 	class Coche{
 
+		//protected $rueda;
 		private $rueda;
 		var $color;
-		var $motor;
+		protected $motor;
 
 		function __construct(){//metodo constuctor
 
@@ -18,6 +19,9 @@
 
 		function get_ruedas(){
 			return $this->ruedas;
+		}
+		function get_motor(){
+			return $this->motor;
 		}
 
 		function arrancar(){
@@ -39,7 +43,7 @@
 
 		}
 
-		function establece_color($color_coche, $nombre_coche){
+		function set_color($color_coche, $nombre_coche){
 
 			$this -> color = $color_coche;
 
@@ -56,9 +60,6 @@
 
 	class Camion extends Coche{
 
-		var $rueda;
-		var $color;
-		var $motor;
 
 		function __construct(){//metodo constuctor
 
@@ -70,7 +71,7 @@
 
 
 
-		function establece_color($color_camion, $nombre_camion){
+		function set_color($color_camion, $nombre_camion){
 
 			$this -> color = $color_camion;
 
