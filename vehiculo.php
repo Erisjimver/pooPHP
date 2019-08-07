@@ -5,7 +5,7 @@
 	class Coche{
 
 		//protected $rueda;
-		private $rueda;
+		protected $rueda;
 		var $color;
 		protected $motor;
 
