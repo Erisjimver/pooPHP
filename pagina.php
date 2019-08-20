@@ -1,11 +1,11 @@
 <?php
 
-    require "conexion.php";
+    require "devuelve_productos.php";
     //$filepath = realpath (dirname(__FILE__));
 
    // require_once($filepath."/devuelve_productos.php");
 
-    $productos = new devuelve_productos();
+    $productos = new Devuelve_Productos();
 
     $array_productos=$productos->get_productos();
 
@@ -25,27 +25,33 @@
 echo "<table border=1>";
 echo "<caption>productos</caption>";
 echo 	"<tr>";
-echo 		"<th>Nombre: </th>";
-echo 		"<th>Contraseña</th>";
-echo 		"<th>Telefono</th>";
-echo 		"<th>Direccion</th>";
+echo 		"<th>Codigo: </th>";
+echo 		"<th>Seccion</th>";
+echo 		"<th>Nombre</th>";
+echo 		"<th>Precio</th>";
+echo 		"<th>Fecha</th>";
+echo 		"<th>Importado</th>";
+echo 		"<th>pais de origen</th>";
 
 echo 	"</tr>";
+ 
     foreach($array_productos as $elemento){
+        
+     
         echo 	"<tr>";
 
 		echo "<td>" .  $elemento['códigoartículo'] . "</<td>";
-        echo "<td>" . $elemento['sección'] . "</<td>";
-        echo "<td>" . $elemento['nombreartículo'] . "<td>";
-        echo "<td>" . $elemento['precio'] . "</<td>";
-        echo "<td>" . $elemento['fecha'] . "</<td>";
-        echo "<td>" . $elemento['importado'] . "</<td>";
-        echo "<td>" . $elemento['paísdeorigen'] . "</td>";
+        //echo "<td>" . $elemento['sección'] . "</<td>";
+        //echo "<td>" . $elemento['nombreartículo'] . "<td>";
+        //echo "<td>" . $elemento['precio'] . "</<td>";
+        //echo "<td>" . $elemento['fecha'] . "</<td>";
+        //echo "<td>" . $elemento['importado'] . "</<td>";
+        //echo "<td>" . $elemento['paísdeorigen'] . "</td>";
 
         echo 	"</tr>";
 
     }
-    echo "</table>";
+//    echo "</table>";
 
 ?>
 </body>

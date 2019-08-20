@@ -2,13 +2,14 @@
 
     require("config.php");
 
-    class conexion{
+    class Conexion{
 
         protected $conexion_db;
 
         public function __construct(){
 
             $this->conexion_db=new mysqli(DB_HOST,DB_USUARIO,DB_CONTRA,DB_NOMBRE);
+            
             if($this->conexion_db->connect_errno){
                 echo"Fallo al conectar a MySql: " . $this->conexion_db->connect_error;
 
