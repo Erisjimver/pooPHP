@@ -1,10 +1,12 @@
 <?php
 
-    require "Conexion.php";
+    require "conexion.php";
 
-    class devuelve_productos extends Conexion{
+    class devuelve_productos extends conexion{
 
-        public function __construct(){
+        public function devuelve_productos()
+       // public function __construct()
+        {
             parent::__construct();
         }
 
