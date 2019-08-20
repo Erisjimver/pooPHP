@@ -4,8 +4,8 @@
 
     class devuelve_productos extends conexion{
 
-        public function devuelve_productos()
-       // public function __construct()
+       // public function devuelve_productos()
+        public function __construct()
         {
             parent::__construct();
         }
