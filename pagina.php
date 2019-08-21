@@ -40,8 +40,8 @@ echo 	"</tr>";
      
         echo 	"<tr>";
 
-		echo "<td>" . $elemento["CÓDIGOARTÍCULO"] . "</<td>";
-        echo "<td>" . $elemento["SECCIÓN"] . "</<td>";
+		echo "<td>" . $elemento['CÓDIGOARTÍCULO'] . "</<td>";
+        echo "<td>" . $elemento['SECCIÓN'] . "</<td>";
         echo "<td>" . $elemento['NOMBREARTÍCULO'] . "<td>";
         echo "<td>" . $elemento['PRECIO'] . "</<td>";
         echo "<td>" . $elemento['FECHA'] . "</<td>";
