@@ -25,7 +25,7 @@
 echo "<table border=1>";
 echo "<caption>productos</caption>";
 echo 	"<tr>";
-echo 		"<th>Codigo: </th>";
+echo 		"<th>Codigo</th>";
 echo 		"<th>Seccion</th>";
 echo 		"<th>Nombre</th>";
 echo 		"<th>Precio</th>";
@@ -40,18 +40,18 @@ echo 	"</tr>";
      
         echo 	"<tr>";
 
-		echo "<td>" .  $elemento['códigoartículo'] . "</<td>";
-        //echo "<td>" . $elemento['sección'] . "</<td>";
-        //echo "<td>" . $elemento['nombreartículo'] . "<td>";
-        //echo "<td>" . $elemento['precio'] . "</<td>";
-        //echo "<td>" . $elemento['fecha'] . "</<td>";
-        //echo "<td>" . $elemento['importado'] . "</<td>";
-        //echo "<td>" . $elemento['paísdeorigen'] . "</td>";
+		echo "<td>" . $elemento["CÓDIGOARTÍCULO"] . "</<td>";
+        echo "<td>" . $elemento["SECCIÓN"] . "</<td>";
+        echo "<td>" . $elemento['NOMBREARTÍCULO'] . "<td>";
+        echo "<td>" . $elemento['PRECIO'] . "</<td>";
+        echo "<td>" . $elemento['FECHA'] . "</<td>";
+        echo "<td>" . $elemento['IMPORTADO'] . "</<td>";
+        echo "<td>" . $elemento['PAÍSDEORIGEN'] . "</td>";
 
         echo 	"</tr>";
 
     }
-//    echo "</table>";
+    echo "</table>";
 
 ?>
 </body>

@@ -6,7 +6,8 @@
 
         protected $conexion_db;
 
-        public function __construct(){
+        function __construct(){
+        //public function Conexion(){
 
             $this->conexion_db=new mysqli(DB_HOST,DB_USUARIO,DB_CONTRA,DB_NOMBRE);
             
@@ -21,5 +22,5 @@
         }
     }
 
-
+        
 ?>
